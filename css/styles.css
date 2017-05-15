@@ -8,9 +8,37 @@
   src: url(../fonts/pixelmix.ttf);
 }
 
+html {
+  height: 100%;
+  width: 100%;
+  /*background-color: green;*/
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../img/background.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.well {
+  background-color: rgba(235, 235, 245, 0.6);
+}
+
+header {
+  text-align: center;
+  padding: 40px 10px;
+
+}
+
 body {
   font-family: bit;
+  background: inherit;
 }
+
+header h1 {
+  font-size: 60px;
+}
+
+
+
 /*gallery*/
 .new-poke {
   height: 300px;
@@ -21,6 +49,8 @@ body {
   width: 80%;
   max-height: 240px;
   margin-left: 10%;
+  border: 20px solid #eee;
+  border-radius: 50px 0px;
 }
 
 .new-poke h2 {
@@ -40,7 +70,6 @@ body {
 
 .input-group-addon {
   padding: 3px;
-  background-color: inherit;
 }
 
 .input-group-addon img {
@@ -48,10 +77,10 @@ body {
 }
 
 .form-control {
-  background-color: inherit;
   font-family: thinbit;
   color: red;
   text-shadow: 0 2px 2px grey;
+  border-radius: 15px;
 }
 
 .form-control::placeholder {
