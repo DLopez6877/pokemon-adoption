@@ -8,6 +8,65 @@
     <title>Adoption</title>
   </head>
   <body>
+    <div class="container">
+      <header>
+        <h1>Team Rocket Adoption Services</h1>
+      </header>
+      <!-- filter -->
+      <div>
+        <p>Click here to hide adopted pokemon</p>
+      </div>
+      <!-- selected pokemon -->
+      <div class="initially-hidden row">
+        <div class="col-xs-6">
+          <img src="picture of pokemon" alt="#" id="selected-poke-img"/>
+        </div>
+        <div class="col-xs-6">
+          <h1>Pokemon Name</h1>
+          <p>Pokemon description</p>
+          <button type="button" name="button">Adopt</button>
+        </div>
+      </div><!-- end selected pokemon row-->
+      <!-- gallery -->
+      <div class="row">
+        <div class="col-xs-4">
+          <img src="picture of pokemon" alt="#" class="poke-img"/>
+        </div>
+        <div class="col-xs-4">
+          <img src="picture of pokemon" alt="#" class="poke-img"/>
+        </div>
+        <div class="col-xs-4">
+          <img src="picture of pokemon" alt="#" class="poke-img"/>
+        </div>
+        <div class="col-xs-4">
+          <img src="picture of pokemon" alt="#" class="poke-img"/>
+        </div>
+      </div><!-- end gallery row -->
+      <!-- adoption form -->
+      <form id="adoption-form">
+        <div class="form-group">
+          <label for="inputted-name">Your pokemon's name:</label>
+          <input type="text" class="form-control" id="poke-name" required>
+        </div>
+        <div class="form-group">
+          <label for="inputted-age">Your pokemon's age</label>
+          <input type="number" class="form-control" id="poke-age" required>
+        </div>
+        <div class="form-group">
+          <label for="inputted-type">Your pokemon's type:</label>
+          <input type="text" class="form-control" id="poke-type" placeholder="e.g. fire, water..."required>
+        </div>
+        <div class="form-group">
+          <label for="inputted-description">A brief description of your pokemon:</label>
+          <textarea type="text" class="form-control" id="poke-description"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="inputted-picture">Optional picture of your pokemon:</label>
+          <input type="text" class="form-control" id="poke-picture" placeholder="https://...">
+        </div>
+        <button type="submit" name="button" class="btn">List for Adoption</button>
+      </form>
 
+    </div>
   </body>
 </html>
