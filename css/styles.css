@@ -1,7 +1,40 @@
-.input-group-addon {
+@font-face {
+  font-family: bit;
+  src: url('../fonts/8-BIT WONDER.TTF');
+}
+
+@font-face {
+  font-family: thinbit;
+  src: url(../fonts/pixelmix.ttf);
+}
+
+body {
+  font-family: bit;
+}
+
+/*input fields*/
+.input-group {
+  border: solid #9fcce5;
+  border-radius: 15px;
+}
+
+.input-group-addon:first-child {
   padding: 3px;
+  border-right: medium solid #9fcce5;
+  background-color: inherit;
 }
 
 .input-group-addon img {
   height: 25px;
+}
+
+.form-control {
+  background-color: inherit;
+  font-family: thinbit;
+  color: red;
+  text-shadow: 0 2px 2px grey;
+}
+
+.form-control::placeholder {
+  text-shadow: none;
 }
