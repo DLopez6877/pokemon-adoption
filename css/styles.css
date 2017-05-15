@@ -1,3 +1,7 @@
+.initially-hidden {
+  display: none;
+}
+
 @font-face {
   font-family: bit;
   src: url('../fonts/8-BIT WONDER.TTF');
