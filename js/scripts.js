@@ -22,10 +22,17 @@ $(function() {
 
     var newPokemon = new Pokemon(inputtedName, inputtedAge, inputtedType, inputtedDescription, inputtedPicture);
 
-    $(".results").append(
-      "<div class = 'col-xs-4'> <img src ='"+ newPokemon.pokemonPicture +
-      "' alt='" + newPokemon.pokemonName +
-      "'class='poke-img'/>");
 
+    $(".results").append(
+      "<div class = 'col-xs-4 new-poke'> <img src ='" + newPokemon.pokemonPicture +
+      "' alt='" + newPokemon.pokemonName +
+      "'class='poke-img'/> <br> <h2>" + newPokemon.pokemonName + "</h2> </div>");
+  });
+
+  $('.results').last().click(function() {
+    alert("itworks");
+    // $(".initially-hidden-row").show();
+    // $(".initially-hidden-row h2").text(newPokemon.pokemonName);
+    // $(".new-poke-pic").attr("src", newPokemon.pokemonPicture);
   });
 });
