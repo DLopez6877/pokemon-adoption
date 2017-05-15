@@ -12,6 +12,9 @@ body {
   font-family: bit;
 }
 
+.poke-img {
+  max-width: 400px;
+}
 /*input fields*/
 .input-group {
   border: solid #9fcce5;
@@ -19,8 +22,12 @@ body {
 }
 
 .input-group-addon:first-child {
-  padding: 3px;
   border-right: medium solid #9fcce5;
+}
+
+
+.input-group-addon {
+  padding: 3px;
   background-color: inherit;
 }
 
